@@ -7,17 +7,12 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NEXT.JS 14 Parallel Routes",
-  description: "NEXT.JS 14 Parallel Routes"
+  title: "NEXT.JS 14 Parallel Routes"
 };
 
 export default function RootLayout({
-  children,
-  team,
-  dashboard
+  children
 }: Readonly<{
-  team: React.ReactNode
-  dashboard: React.ReactNode
   children: React.ReactNode
 }>) {
   return (
@@ -25,15 +20,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <Header />
-          <main className="container mx-auto">
-            <section className="py-6">
-              {children}
-            </section>
-
-            <section className="flex gap-6 mt-4 mb-8">
-              {team}
-              {dashboard}
-            </section>
+          <main className="container mx-auto my-6">
+            {children}
           </main>
         </Providers>
       </body>
