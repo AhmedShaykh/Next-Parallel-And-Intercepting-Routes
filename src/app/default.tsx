@@ -1,16 +1,14 @@
 import { delay } from "@/lib/utils";
 
-const Home = async () => {
+export default async function DefaultHome() {
 
     await delay(1000);
 
     return (
-        <div className="h-60 rounded-xl bg-blue-700 p-10 text-white">
+        <div className="h-60 rounded-xl bg-cyan-600 p-10 text-white">
             <h1 className="text-3xl font-bold text-center">
-                Parallel Routes
+                Default Main Page
             </h1>
         </div>
     )
 };
-
-export default Home;
