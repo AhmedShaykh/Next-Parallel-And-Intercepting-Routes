@@ -1,3 +1,4 @@
+import Providers from "@/Components/Providers";
 import Header from "@/Components/Header";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
@@ -22,17 +23,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <main className="container mx-auto">
-          <section className="py-6">
-            {children}
-          </section>
+        <Providers>
+          <Header />
+          <main className="container mx-auto">
+            <section className="py-6">
+              {children}
+            </section>
 
-          <section className="flex gap-6 mt-4 mb-8">
-            {team}
-            {dashboard}
-          </section>
-        </main>
+            <section className="flex gap-6 mt-4 mb-8">
+              {team}
+              {dashboard}
+            </section>
+          </main>
+        </Providers>
       </body>
     </html>
   );
