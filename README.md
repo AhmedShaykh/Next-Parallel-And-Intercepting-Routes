@@ -1,1 +1,1 @@
-# NEXT.JS 14 Parallel Routes!
+# NEXT.JS 14 Parallel Routes & Intercepting Routes!
