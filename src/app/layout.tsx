@@ -7,7 +7,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NEXT.JS Parallel Routes & Intercepting Routes!"
+  title: "NEXT.JS Parallel & Intercepting Routes!"
 };
 
 export default function RootLayout({

@@ -1,5 +1,14 @@
-/** @type {import('next').NextConfig} */
+/** @type {import("next").NextConfig} */
 
-const nextConfig = {};
+const nextConfig = {
+    images: {
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "pbs.twimg.com"
+            }
+        ]
+    }
+};
 
 export default nextConfig;

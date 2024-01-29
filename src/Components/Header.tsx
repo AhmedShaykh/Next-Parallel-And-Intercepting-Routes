@@ -9,13 +9,14 @@ function Header() {
                         <li>
                             <Link href="/">Home</Link>
                         </li>
-
                         <li>
                             <Link href="/settings">Settings</Link>
                         </li>
-
                         <li>
                             <Link href="/todo">Todo</Link>
+                        </li>
+                        <li>
+                            <Link href="/photos">Photos</Link>
                         </li>
                     </ul>
                 </nav>

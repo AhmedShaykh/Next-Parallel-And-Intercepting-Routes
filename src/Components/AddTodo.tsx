@@ -13,10 +13,13 @@ const AddTodo = () => {
 
         e.preventDefault();
 
-        dispatch(addTodo(input));
+        if (input && input.length > 0) {
 
-        setInput("");
+            dispatch(addTodo(input));
 
+            setInput("");
+
+        }
     };
 
     return (

@@ -1,4 +1,4 @@
-export default function RoutesLayout({
+export default function ParallelLayout({
     children,
     team,
     dashboard
